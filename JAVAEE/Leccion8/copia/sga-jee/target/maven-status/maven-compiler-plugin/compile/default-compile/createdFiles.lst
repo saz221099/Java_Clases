@@ -1,0 +1,7 @@
+mx\com\gm\sga\domain\Usuario.class
+mx\com\gm\sga\domain\Persona_.class
+mx\com\gm\sga\cliente\PruebaManejoTransacciones.class
+mx\com\gm\sga\domain\Persona.class
+mx\com\gm\sga\domain\Usuario_.class
+mx\com\gm\sga\servicio\PersonaServiceRemote.class
+mx\com\gm\sga\cliente\ClientePersonaService.class
