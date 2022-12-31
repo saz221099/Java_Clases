@@ -123,7 +123,18 @@ public class Persona implements Serializable {
 
     @Override
     public String toString() {
-        return "Persona{" + "idPersona=" + idPersona + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", telefono=" + telefono + '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Persona{");
+        sb.append("idPersona=").append(idPersona);
+        sb.append(", nombre=").append(nombre);
+        sb.append(", apellido=").append(apellido);
+        sb.append(", email=").append(email);
+        sb.append(", telefono=").append(telefono);
+        sb.append(", usuarioList=").append(usuarioList);
+        sb.append('}');
+        return sb.toString();
     }
+
+    
 
 }

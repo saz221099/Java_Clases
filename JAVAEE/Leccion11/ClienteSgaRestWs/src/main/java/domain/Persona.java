@@ -5,23 +5,24 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Persona {
 
-    private int idPersona;
+    private Integer idPersona;
     private String nombre;
     private String apellido;
     private String email;
     private String telefono;
-    
-    public Persona(){}
-    
-    public Persona(int idPersona){
+
+    public Persona() {
+    }
+
+    public Persona(Integer idPersona) {
         this.idPersona = idPersona;
     }
 
-    public int getIdPersona() {
+    public Integer getIdPersona() {
         return idPersona;
     }
 
-    public void setIdPersona(int idPersona) {
+    public void setIdPersona(Integer idPersona) {
         this.idPersona = idPersona;
     }
 
@@ -59,7 +60,15 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "idPersona=" + idPersona + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", telefono=" + telefono + '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Persona{");
+        sb.append("idPersona=").append(idPersona);
+        sb.append(", nombre=").append(nombre);
+        sb.append(", apellido=").append(apellido);
+        sb.append(", email=").append(email);
+        sb.append(", telefono=").append(telefono);
+        sb.append('}');
+        return sb.toString();
     }
-    
+
 }
